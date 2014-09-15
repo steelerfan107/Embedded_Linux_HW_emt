@@ -20,15 +20,21 @@ To Run:
 
 HARDWARE (Had to use slightly differant pinout to account for not being able to change pullup/down):
 
+
+
 PUSH BUTTONS ON
 P9_11
 P9_13
 P9_15
 P9_12
 
-LEDS ON:
+Connects pin and ground.
+
+LEDS ON PINS:
 P9_21
 P9_23
 P9_27
 P9_22
+
+1k Current limiting resistor
 

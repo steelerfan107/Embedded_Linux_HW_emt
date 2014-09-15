@@ -1,0 +1,34 @@
+Homework 02
+ERIC TAYLOR
+
+In this homework I created two programs, the first toggles 4 leds with 4 push buttons. The second one is an Etch-A-Sketch program controlled by push buttons.
+
+HOW TO:
+
+To Compile Push Button LED program:
+gcc switches.c gpio-utils.c gpio-utils.h
+
+To Run:
+./a.out
+
+To Compile Etch-a-Sketch Program:
+gcc etch_a_sketch.c -lncurses gpio-utils.c gpio-utils.h
+
+To Run:
+./a.out <size of board>
+
+
+HARDWARE (Had to use slightly differant pinout to account for not being able to change pullup/down):
+
+PUSH BUTTONS ON
+P9_11
+P9_13
+P9_15
+P9_12
+
+LEDS ON:
+P9_21
+P9_23
+P9_27
+P9_22
+

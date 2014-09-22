@@ -1,0 +1,35 @@
+HOMEWORK 03 README
+
+Problem 1:
+
+How to Compile:
+gcc temp_alert.c gpio-utils.h gpio-utils.c
+
+How to Run:
+./a.out
+
+What it Does:
+This program will alert the user when the temperature reads a temp above a certian temperature in the terminal.
+
+Problem 2:
+
+How to Compile:
+gcc etch_a_sketch.c gpio-utils.h gpio-utils.c i2c-dev.h i2cbusses.c i2cbusses.h
+
+How to Run:
+./a.out
+
+What it Does:
+This etch-a-sketch program uses the four push buttons to display on the 8x8 LED array over i2c
+
+HARDWARE:
+
+4 Push Buttons
+UP:P9_13
+DOWN:P9_12
+RIGHTP9_16
+LEFT:P9_15
+
+Alert:P9_14
+
+4.7k Pullup Resistors on data, clock, and alert lines

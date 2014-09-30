@@ -1,0 +1,34 @@
+HOMEWORK 04 README
+
+How to compile and run each program.
+
+1.   a) This program uses two switches to toggle USR3 and USR1 using mmap
+	to Compile: gcc mmap_switch.c
+	to Run:     ./a.out			
+	Uses Buttons: P9_11  and P9_13
+
+     b) In this program I edited the mmap thru to use a switch instead to light up an LED 
+	to compile: gcc gpioThru.c
+	to Run:     ./a.out
+	Uses Button:  P_11
+
+2.   This program uses the two encoders to control the etch-a-sketch board over i2c
+	to Compile: gcc etch_a_sketch.c i2cbusses.c i2cbusses.h gpio-utils.c gpio-utils.h i2c-dev.h
+	to Run:     ./setup.sh
+		    ./a.out
+
+3.   This program edits the bone server to change both colors of the LED over the internet
+	to Run    : cd ./server
+		    ./boneServer.js
+
+
+HARDWARE
+
+Buttons Connecting pin to Ground
+	P9_11,12,13,15
+
+LED with Current Limiting Resistor on 
+	P9_26
+
+Rotary Encoders on eQep 1 and 2
+		

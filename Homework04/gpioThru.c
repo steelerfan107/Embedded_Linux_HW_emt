@@ -2,7 +2,7 @@
 //
 // Read one gpio pin and write it out to another using mmap.
 // Be sure to set -O3 when compiling.
-// Modified by Mark A. Yoder  26-Sept-2013
+// Modified by Eric Taylor  29-Sept-2014
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/mman.h>

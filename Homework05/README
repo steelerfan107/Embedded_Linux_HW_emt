@@ -1,0 +1,8 @@
+For this Homework there were just two assignments.
+
+The first problem was the makefile. You can use it by doing
+~:make
+~:make clean
+
+The second is hostBeagleOutput which lists the output of the console after cross compiling
+

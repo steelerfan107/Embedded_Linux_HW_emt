@@ -1,0 +1,32 @@
+
+taylorem@dhcp-137-112-176-64:~/exercises$ ./a.out
+Hello, World! Main is executing at 0x4004f4
+This address (0x7fff281e2f48) is in our stack frame
+This address (0x601038) is in our bss section
+This address (0x601020) is in our data section
+taylorem@dhcp-137-112-176-64:~/exercises$ vim crossCompileEnv.sh
+taylorem@dhcp-137-112-176-64:~/exercises$ source ~/crossCompileEnv.sh
+bash: /home/taylorem/crossCompileEnv.sh: No such file or directory
+taylorem@dhcp-137-112-176-64:~/exercises$ vim crossCompileEnv.sh
+taylorem@dhcp-137-112-176-64:~/exercises$ source crossCompileEnv.sh
+taylorem@dhcp-137-112-176-64:~/exercises$ ${CROSS_COMPILE}gcc helloWorld.c
+taylorem@dhcp-137-112-176-64:~/exercises$ file a.out
+a.out: ELF 32-bit LSB executable, ARM, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.31, BuildID[sha1]=0xed861cedf94054c1c1bb8a8ddaaded1c7500a76d, not stripped
+taylorem@dhcp-137-112-176-64:~/exercises$ scp a.out root@192.168.7.2:.
+Debian GNU/Linux 7
+
+BeagleBoard.org BeagleBone Debian Image 2014-08-19
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+a.out                                                              100% 7872     7.7KB/s   00:00    
+taylorem@dhcp-137-112-176-64:~/exercises$ ssh root@192.168.7.2 ./a.out
+Debian GNU/Linux 7
+
+BeagleBoard.org BeagleBone Debian Image 2014-08-19
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+Hello, World! Main is executing at 0x8395
+This address (0xbefd1c9c) is in our stack frame
+This address (0x11030) is in our bss section
+This address (0x11028) is in our data section
+

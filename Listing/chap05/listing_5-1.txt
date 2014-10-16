@@ -1,0 +1,18 @@
+
+This is similar however the file is called piggy.lzo and not piggy.gz. There are also not other modules being built in such as  big-endian.
+...
+  LD      vmlinux
+  SORTEX  vmlinux
+sort done marker at 7f0f18
+  SYSMAP  System.map
+  Building modules, stage 2.
+  OBJCOPY arch/arm/boot/Image
+  Kernel: arch/arm/boot/Image is ready
+  LZO     arch/arm/boot/compressed/piggy.lzo
+  MODPOST 1274 modules
+  AS      arch/arm/boot/compressed/piggy.lzo.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
+..
+

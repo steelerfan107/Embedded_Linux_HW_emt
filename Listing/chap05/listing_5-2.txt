@@ -1,0 +1,9 @@
+This is same as the book listing with the exception that the file is a piggy.gzip.S
+
+        .section .piggydata,#alloc
+        .globl  input_data
+input_data:
+        .incbin "arch/arm/boot/compressed/piggy.gzip"
+        .globl  input_data_end
+input_data_end:
+
